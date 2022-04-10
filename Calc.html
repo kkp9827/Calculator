@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+
+		function getSum()
+		{
+
+          var a=parseInt(document.getElementById("fno").value);
+          var b=parseInt(document.getElementById("sno").value);
+          var c=a+b;
+          document.getElementById("result").innerHTML=c;
+		}
+		function getmulti()
+		{
+			var a=parseInt(document.getElementById("fno").value);
+			var b=parseInt(document.getElementById("sno").value);
+			var d=a*b;
+		    document.getElementById("result").innerHTML=d;
+		}
+		function getdivi()
+		{
+			var a=parseInt(document.getElementById("fno").value);
+			var b=parseInt(document.getElementById("sno").value);
+			var d=a/b;
+		    document.getElementById("result").innerHTML=d;
+		}
+		function getmod()
+		{
+			var a=parseInt(document.getElementById("fno").value);
+			var b=parseInt(document.getElementById("sno").value);
+			var d=a%b;
+		    document.getElementById("result").innerHTML=d;
+		}
+
+	</script>
+
+</head>
+<body>
+
+
+<fieldset>
+	<LEGEND><h3>Calculator</h3></LEGEND>
+	<table border="1" cellspacing="6" cellpadding="6">
+		<tr><th>First No</th><td><input type="text" id="fno"></td></tr>
+		<tr><th>Seccond No</th><td><input type="text" id="sno"></td></tr>
+		<tr><th>Result</th><td><div id="result"></div></td></tr>
+		<tr><td><input type="button" value="Sum" onclick="getSum()"><input type="button" value="product" onclick="getmulti()"><input type="button" value="division" onclick="getdivi()"><input type="button" value="modulus"onclick="getmod()"></th></tr>
+	</table>
+</fieldset>
+
+
+</body>
+</html>
